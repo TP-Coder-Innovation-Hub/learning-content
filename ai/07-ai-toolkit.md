@@ -1,86 +1,95 @@
-# AI Toolkit
+# Build Your Own Toolkit — Evaluate Tools Systematically
 
-## What
+## What You'll Learn
 
-There are many AI tools. New ones appear weekly. This is a framework for evaluating which tools deserve a place in your workflow.
+- How to evaluate AI tools before committing
+- The 4-criteria evaluation framework: Task Fit, Cost, Privacy, Integration
+- Free vs paid: what's worth paying for
+- Tool recommendations by use case
 
-## The Evaluation Framework
+## The 4-Criteria Evaluation Framework
 
-### 1. Task Fit
+Before adopting any AI tool, score it 1-5 on each:
 
-Does the tool solve a problem you actually have?
+| Criteria | Question | What to Check |
+|----------|----------|---------------|
+| **Task Fit** | Does it actually do what I need? | Test with YOUR real tasks, not demos |
+| **Cost** | What's the true total cost? | Free tier limits, usage caps, per-token pricing |
+| **Privacy** | What happens to my data? | Data retention policy, training on your data opt-out |
+| **Integration** | Does it fit my existing workflow? | API, exports, file formats, team sharing |
 
-- What specific task does it help with?
-- How often do you do that task?
-- How much time does it save?
-- Is the output quality high enough for your needs?
+Score ≥16: adopt. Score 12-15: try free tier first. Score <12: skip.
 
-A tool that saves 5 minutes a week on a task you do daily is worth more than one that saves 2 hours on a task you do once a year.
+## Tool Landscape by Use Case (2026)
 
-### 2. Cost
+### Writing & Documents
 
-Understand the full cost:
+| Tool | Free Tier | Best For | Thai Support |
+|------|-----------|----------|--------------|
+| Claude | Yes (limited) | Long documents, analysis, coding | Good |
+| ChatGPT | Yes (limited) | General writing, brainstorming | Good |
+| Google Gemini | Yes (limited) | Image generation, Google integration | Excellent |
+| Microsoft Copilot | Yes (with limits) | Office documents, enterprise | Good |
 
-- **Direct cost** — Subscription fees, per-use pricing, API costs
-- **Time cost** — Learning curve, setup time, prompt engineering time
-- **Quality cost** — How much time do you spend reviewing and fixing output?
-- **Switching cost** — What happens if the tool disappears or changes pricing?
+### Research & Search
 
-A free tool that produces low-quality output you spend 30 minutes fixing is more expensive than a paid tool that produces usable output immediately.
+| Tool | Free Tier | Best For |
+|------|-----------|----------|
+| Perplexity | Yes | Current information with sources |
+| Google AI Overview | Yes | Quick factual answers |
+| NotebookLM | Yes | Upload your own docs, AI tutor |
 
-### 3. Privacy
+### Image Generation
 
-What data are you sending to the tool?
+| Tool | Free Tier | Best For |
+|------|-----------|----------|
+| Gemini (Imagen) | Yes | Photorealistic images, Thai text in images |
+| ChatGPT (DALL-E) | Yes (limited) | Creative illustrations |
+| Midjourney | No ($10/mo) | Artistic, high-quality images |
+| Canva AI | Yes | Social media graphics, presentations |
 
-- Does the tool train on your inputs?
-- Can you opt out of training?
-- Where is data processed and stored?
-- Does the tool comply with your company's data policies?
-- What happens to your data if you cancel the service?
+### Productivity & Automation
 
-Never assume a tool is private. Read the terms. Ask your security team.
+| Tool | Free Tier | Best For |
+|------|-----------|----------|
+| Claude Cowork | Pro plan required | Multi-step file tasks, scheduled work |
+| Microsoft Copilot | Yes (with limits) | Office automation |
+| Google Workspace AI | Yes (with limits) | Gmail, Docs, Sheets integration |
 
-### 4. Integration
+### Coding
 
-How does the tool fit into your existing workflow?
+| Tool | Free Tier | Best For |
+|------|-----------|----------|
+| Claude Code | API pricing | Full-stack development, code review |
+| GitHub Copilot | Free for students | In-editor code suggestions |
+| Cursor | Yes (limited) | AI-first code editor |
 
-- Does it integrate with your editor, CI/CD, or communication tools?
-- Can you automate its use, or does it require manual interaction?
-- Does it work with your team's existing processes?
-- Can multiple people use it collaboratively?
+## Free vs Paid: What's Worth Paying For
 
-A tool that requires you to switch contexts is harder to adopt than one that meets you where you work.
+### Start Free, Upgrade Only When:
 
-## Categories of AI Tools
+- You hit free tier limits daily (not occasionally)
+- The paid feature saves you more time than its cost
+- Your team needs shared access or enterprise security
+- You need guaranteed availability for client work
 
-| Category          | Purpose                          | Examples                    |
-|-------------------|----------------------------------|-----------------------------|
-| Code assistants   | Write, review, explain code      | GitHub Copilot, Cursor      |
-| Chat interfaces   | General Q&A, writing, analysis   | ChatGPT, Claude, Gemini     |
-| Search/research   | Find and synthesize information  | Perplexity, You.com         |
-| Writing           | Draft, edit, translate content   | Jasper, Grammarly AI        |
-| Image generation  | Create and edit images           | DALL-E, Midjourney, Flux    |
-| Specialized       | Domain-specific tasks            | Domain-specific tools       |
+### Not Worth Paying For (Yet):
 
-## When to Adopt a New Tool
+- Multiple AI chatbots — pick ONE and learn it deeply
+- AI tools you use less than 3x per week
+- Any tool you haven't tested with your real workflow
 
-1. You have a recurring problem that current tools don't solve well
-2. The new tool clearly solves that problem
-3. The cost (money, time, privacy) is justified by the benefit
-4. You can try it with low commitment (free tier, trial)
-5. Your team/company approves its use
+## Exercise: Evaluate a Tool in 30 Minutes
 
-## When to Skip
+1. Pick one task you do regularly (e.g., writing client emails)
+2. Try it on Claude free tier
+3. Try it on ChatGPT free tier
+4. Try it on Gemini free tier
+5. Score each on the 4 criteria
+6. Pick the winner for that specific task
 
-- You're adopting it because everyone is talking about it
-- It solves a problem you don't have
-- The privacy terms are unclear or unacceptable
-- You'd spend more time managing the tool than it saves
-- You already have a tool that does the same thing adequately
+Repeat for different tasks. You'll find different tools win for different tasks — that's normal.
 
-## Common Mistakes
+## Key Takeaway
 
-- Tool hopping. Switching AI tools every week means you never get proficient at any of them. Pick one, learn it deeply, switch only when there's a clear advantage.
-- Paying for tools you don't use. Audit your subscriptions quarterly.
-- Not reading the privacy policy. Your company's proprietary code or data in a third-party AI tool is a real risk.
-- Using the most expensive option when a simpler one works. Not every task needs the most powerful model.
+Don't adopt tools because everyone else is. Evaluate systematically: does it fit YOUR tasks, is it worth the cost, is your data safe, and does it fit your workflow? The best tool is the one you actually use consistently.

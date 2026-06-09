@@ -1,69 +1,103 @@
-# AI Writing
+# Workflow: Write Emails and Documents Faster
 
-## What
+## What You'll Learn
 
-AI is a powerful writing tool when used as part of a structured process. The workflow is: you draft, AI reviews and suggests, you edit and decide.
+- The Draft → AI Review → Finalize workflow
+- How to use AI for emails, reports, and presentations
+- Claude Artifacts for live document collaboration
+- Practical exercises you can use at work today
 
-## The Workflow
+## The Workflow: Draft → AI Review → Finalize
 
-### Step 1: Draft
-
-Write your first draft yourself. Even if it is rough.
-
-Why: Writing the draft forces you to think through the content. You understand the topic, the audience, and the message. If you skip this step and let AI write from scratch, you get generic content that you cannot evaluate because you haven't thought it through.
-
-### Step 2: AI Review
-
-Ask the AI to review your draft with specific instructions.
+Never ask AI to write from scratch. You provide the substance, AI improves the form.
 
 ```
-Review this technical documentation draft. Check for:
-- Clarity (would a junior developer understand this?)
-- Completeness (are there gaps?)
-- Accuracy (are the technical claims correct?)
-- Structure (does the order make sense?)
-
-Suggest specific improvements. Do not rewrite the entire document.
+Step 1: YOU write rough notes or bullet points
+Step 2: AI expands into a full document
+Step 3: YOU review, edit, and finalize
 ```
 
-### Step 3: Human Edit
+Why this works: You own the content. AI handles formatting, tone, and structure. The final output reflects your thinking, not generic AI text.
 
-Review the AI's suggestions. Accept what helps. Reject what doesn't. Rewrite where needed.
+## Exercise 1: Professional Email
 
-You are the editor. The AI is a copy editor who works fast but doesn't always understand the context.
+Your input (rough notes):
+```
+เรียนคุณสมชาย
+project delay 2 สัปดาห์ เพราะ API ของ vendor เปลี่ยน
+ต้องแก้ใหม่ทั้ง module
+ขอ call 15 นาทีสัปดาห์หน้าเพื่อ discuss timeline ใหม่
+```
 
-### Step 4: Final Review
+Prompt for AI:
+```
+You are a Thai project manager at a software consultancy. 
 
-Read the complete document once more. Does it sound like you? Does it say what you meant?
+Turn these rough notes into a professional email to a client:
 
-## What AI is Good At
+- Project is delayed 2 weeks due to unexpected third-party API changes
+- Required significant rework on our integration module
+- We have a revised timeline ready to discuss
+- Request a 15-minute call next week
 
-- **Rephrasing** — "Make this paragraph more concise"
-- **Simplifying** — "Rewrite this for a non-technical audience"
-- **Grammar and spelling** — Catches mistakes you've read past ten times
-- **Generating alternatives** — "Give me three different versions of this introduction"
-- **Filling gaps** — "What am I missing from this explanation of database indexing?"
-- **Formatting** — "Convert this outline into properly formatted markdown"
-- **Translating tone** — "Make this sound more professional / casual / direct"
+Format: Professional Thai, polite but direct. Under 200 words.
+Include a proposed call time range.
+```
 
-## What AI is Bad At
+## Exercise 2: Meeting Summary → Action Email
 
-- **Original insights** — It remixes what exists. It doesn't have new ideas.
-- **Knowing your audience** — It doesn't know your team's context, your company's terminology, or your readers' skill level unless you tell it.
-- **Maintaining voice** — AI writing has a recognizable tone. If every document sounds the same, that's why.
-- **Accurate technical details** — It will confidently state wrong facts. Always verify code examples, version numbers, and technical claims.
+After a meeting, paste your rough notes and ask AI to create a structured follow-up:
 
-## Practical Tips
+Prompt:
+```
+Turn these meeting notes into a follow-up email with:
+1. Summary (3 bullet points max)
+2. Action items table (Who, What, By When)
+3. Next meeting date
 
-- Start with your own words. AI as first author produces generic content.
-- Use AI for the tedious parts: formatting, rephrasing, checking consistency.
-- Keep your drafts. If the AI's rewrite loses your point, go back to your version.
-- Verify technical content. Every code snippet, every configuration example, every version number.
-- Read the output aloud. If it sounds unnatural, rewrite it.
+Meeting notes:
+[Paste your raw notes here]
 
-## Common Mistakes
+Write in Thai. Professional tone.
+```
 
-- Copy-pasting AI output without reading it. You are responsible for what you publish.
-- Using AI to avoid thinking. The thinking is the valuable part. AI accelerates the execution.
-- Asking AI to write from scratch when you have specific knowledge it doesn't. You are the expert. Write the key points yourself.
-- Not iterating. The first AI output is a draft, not the final version.
+## Exercise 3: Report Draft
+
+Prompt:
+```
+I need to write a quarterly report section. Here are the key points:
+- Revenue grew 15% QoQ
+- New product launched in March exceeded targets by 20%
+- Customer churn decreased from 5% to 3.2%
+- Team grew from 8 to 12 people
+
+Write a 300-word narrative summary for the executive section.
+Formal Thai business style. No bullet points in the output.
+```
+
+## Using Claude Artifacts for Documents
+
+Claude Artifacts lets you create and iterate on documents in a side panel. You can:
+
+1. Ask Claude to generate a document → it appears as an Artifact
+2. Click the Artifact to view it rendered (markdown, code, etc.)
+3. Say "add a section about X" or "rewrite paragraph 2 to be more formal"
+4. Claude updates the Artifact in real-time
+5. Copy the final version when done
+
+Try: "Create a project brief document with sections: Background, Objectives, Scope, Timeline, Risks. Use this info: [paste your project details]"
+
+## Claude Projects for Repeated Work
+
+If you write similar documents often (weekly reports, client emails, proposals):
+
+1. Create a **Project** in Claude
+2. Upload your templates, style guide, or past examples
+3. Add project instructions: "Always write in Thai. Professional tone. Use this format: [template]"
+4. Every new chat in that project inherits your instructions and files
+
+This saves you from re-explaining your style every time.
+
+## Key Takeaway
+
+AI doesn't replace your thinking. It turns your rough ideas into polished documents. You draft the substance, AI handles the structure, you make the final call. The workflow is always: YOU → AI → YOU.

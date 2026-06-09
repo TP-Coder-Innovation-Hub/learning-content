@@ -1,71 +1,88 @@
-# AI Mindset
+# You + AI Is Stronger Than Either Alone — The AI Fluency Mindset
 
-## What
+## What You'll Learn
 
-The right mindset for working with AI: AI augments your judgment, it does not replace it. You are always the one in control, the one responsible, and the one who decides.
+- The right mental model for human + AI collaboration
+- Common pitfalls: over-reliance, under-reliance, and automation bias
+- How to build your personal AI fluency over time
+- The complete 4D Framework summary
 
-## AI Augments Judgment
-
-AI processes information faster than you can. It can scan more options, generate more alternatives, and find more patterns. But judgment — weighing context, values, consequences, and trade-offs — is a human capability.
-
-Think of AI as a calculator for words and ideas. A calculator helps you do math faster. It doesn't decide what to calculate or whether the result makes sense.
-
-## Staying in Control
-
-### You Set the Goal
-
-AI does not decide what to work on. You do. "Help me optimize this database query" is productive. "What should I work on today?" is abdication.
-
-### You Evaluate the Output
-
-Never ship AI output without reading it. Every line of code, every paragraph of text, every recommendation passes through your judgment filter.
-
-### You Make the Decision
-
-AI can analyze options. It cannot take accountability. When something goes wrong, "the AI suggested it" is not an acceptable explanation.
-
-### You Know the Context
-
-AI doesn't know your team dynamics, your technical constraints, your business priorities, or your company culture. You do. Use that knowledge to evaluate AI output.
-
-## The Spectrum of AI Reliance
+## The Mental Model
 
 ```
-None ←————————————————————————————→ Total
-  |                                        |
-  |  Sweet spot: AI as a tool,            |
-  |  you as the decision maker            |
+You alone:     Good at judgment, creativity, relationships, context
+AI alone:      Good at speed, volume, consistency, pattern recognition
+You + AI:      Faster than you alone, smarter than AI alone
 ```
 
-Too little reliance: You spend hours on tasks AI could accelerate. You miss patterns AI would catch. You're slower than you need to be.
+AI is not replacing you. It's amplifying you. A person with AI outperforms a person without AI on most knowledge tasks. But a person who blindly trusts AI is dangerous.
 
-Too much reliance: You stop thinking critically. You accept AI output without evaluation. You lose the ability to do the work yourself.
+## The 4D Framework Summary
 
-The sweet spot: Use AI to accelerate the routine parts of your work while staying sharp on the judgment-intensive parts. Review everything. Understand everything. Let AI handle the speed, you handle the direction.
+| D | Skill | Practice |
+|---|-------|----------|
+| **Delegation** | Choose what AI should do | "Is this task worth delegating? Does it need human judgment?" |
+| **Description** | Write clear instructions | "Could a smart intern understand my request?" |
+| **Discernment** | Evaluate AI output | "Is this correct? Is this complete? Is this biased?" |
+| **Diligence** | Use AI responsibly | "Is this data safe? Is this ethical? What if I'm wrong?" |
 
-## Practical Principles
+The 4Ds form a loop:
+1. Decide what to delegate (Delegation)
+2. Write the prompt (Description)
+3. Check the output (Discernment)
+4. Consider the impact (Diligence)
+5. Refine and repeat
 
-1. **Understand before you automate.** If you can't do it without AI, you can't evaluate AI's output for that task.
-2. **Use AI to go faster, not to skip steps.** AI accelerates the writing, research, or coding. It doesn't replace understanding the problem.
-3. **Verify the important things.** A typo in an email is fine. A wrong API key in production is not. Scale your verification to the stakes.
-4. **Stay current.** AI tools change fast. What was true 6 months ago might not be true now. Keep experimenting.
-5. **Teach others.** The best way to solidify your understanding is to help someone else use AI well.
+## Three Pitfalls to Avoid
 
-## What Changes and What Doesn't
+### Over-Reliance
+You let AI do the thinking and stop checking output. You accept AI's answer without verification.
 
-Changes:
-- Speed of execution (faster)
-- Breadth of exploration (wider)
-- Volume of output (more)
+**Fix:** Always review before using. Ask: "Would I be comfortable defending this output to my boss?"
 
-Doesn't change:
-- Need for critical thinking
-- Accountability for results
-- Value of domain expertise
-- Importance of clear communication
+### Under-Reliance
+You don't use AI because you don't trust it, or you think you should do everything yourself.
 
-## Common Mistakes
+**Fix:** Try AI on low-stakes tasks first. Build trust through verification. You'll find it earns its place.
 
-- Letting AI make decisions you should make. If you can't explain why you chose X, you didn't decide — the AI did.
-- Losing skills by over-delegating to AI. If you always use AI to write SQL, you'll forget how. Keep practicing.
-- Thinking AI makes expertise unnecessary. AI makes expertise more valuable, not less. The expert can evaluate AI output; the novice cannot.
+### Automation Bias
+You trust AI more than your own judgment because it sounds confident.
+
+**Fix:** AI's confidence is NOT accuracy. Confident wrong answers are worse than uncertain correct ones. Always cross-check important claims.
+
+## Building Your AI Fluency Over Time
+
+### Week 1: Foundation
+- Pick ONE tool (Claude, ChatGPT, or Gemini)
+- Use it for 3 real tasks daily
+- Practice the RCTF prompt framework
+
+### Week 2: Workflows
+- Set up Claude Projects for your recurring work
+- Try the Draft → AI Review → Finalize workflow
+- Create your first custom Skill
+
+### Week 3: Advanced
+- Try Claude Cowork for a multi-step task
+- Use Gemini to generate an image for a presentation
+- Evaluate 3 tools using the 4-criteria framework
+
+### Week 4: Integration
+- AI is now part of your daily workflow
+- You know when to delegate and when to do it yourself
+- You verify before you trust
+- You protect sensitive data automatically
+
+## Free Resources to Continue Learning
+
+| Resource | Type | Cost |
+|----------|------|------|
+| Anthropic AI Fluency Course | Structured course | Free |
+| Claude for Personal (Anthropic) | Guides & tutorials | Free |
+| Google AI Essentials (Coursera) | Structured course | Free |
+| Prompt Engineering Guide (DAIR.AI) | Reference | Free |
+| TP Coder Learning Content | Practical guides | Free |
+
+## Key Takeaway
+
+AI fluency is not about knowing every tool. It's about developing the judgment to know when AI helps, how to use it well, and when to trust your own expertise over a machine's output. The goal is not AI replacing you — it's you + AI being stronger than either alone.

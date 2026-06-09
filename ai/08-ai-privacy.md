@@ -1,105 +1,78 @@
-# AI Privacy
+# Privacy and Data Safety — What Never to Put Into AI
 
-## What
+## What You'll Learn
 
-Everything you type into an AI tool potentially becomes data the provider can use, store, or expose. Understanding what to never share is critical for protecting yourself, your company, and your customers.
+- What data you should NEVER put into AI tools
+- How to use AI safely at work
+- Understanding free vs paid data policies
+- The Diligence skill from the 4D Framework
 
 ## The Golden Rule
 
-If you wouldn't post it on a public forum, don't put it into an AI tool unless you have explicit confirmation that your data is not used for training and is adequately protected.
+**If you wouldn't post it on a public bulletin board, don't put it in a free AI tool.**
 
-## What to Never Put Into AI
+Free AI tools may use your conversations to train models. Paid/enterprise tools usually have agreements that protect your data. Always check before you type.
 
-### Company Confidential Information
+## Never Put Into AI (Any Tier)
 
-- Proprietary code that gives your company a competitive advantage
-- Internal system architecture details
-- Business strategies and roadmaps
-- Financial data and projections
-- Customer lists and data
+- Customer personal data (names, emails, phone numbers, IDs)
+- Financial data (account numbers, salary details, budgets with names)
+- Health information (diagnosis, medications, insurance)
+- Legal documents under attorney-client privilege
+- Government/classified information
+- Credentials (passwords, API keys, access tokens)
 
-### Personally Identifiable Information (PII)
+## Be Careful With (Depends on Tool)
 
-- Names, addresses, phone numbers
-- Social security or government ID numbers
-- Email addresses (unless your own for testing)
-- Health information
-- Financial account numbers
+| Data Type | Free AI | Paid/Enterprise | Safe Approach |
+|-----------|---------|-----------------|---------------|
+| Company strategy | Don't | Check policy | Anonymize first |
+| Source code | Don't (public repos) | Check policy | Use private repos only |
+| Meeting notes with names | Don't | Usually OK | Remove names |
+| Financial reports | Don't | Check policy | Use percentages, not actuals |
+| Client requirements | Don't | Check policy | Genericize details |
 
-### Authentication Secrets
+## How to Anonymize Before Using AI
 
-- Passwords
-- API keys
-- Access tokens
-- Private keys
-- Database connection strings with credentials
-
-### Legal and Compliance Sensitive Data
-
-- Contract terms and negotiations
-- Pending litigation details
-- Regulated data (healthcare HIPAA data, financial data under SOX/PCI)
-- Export-controlled information
-
-## How to Work Safely with AI
-
-### Sanitize Before Sharing
-
-Replace sensitive values with placeholders before pasting into AI.
+Before pasting work content into AI:
 
 ```
-# Bad
-const dbPassword = "xK9$mP2vL5nQ";
+Original: "Our client Siam Commercial Bank wants to migrate 
+their core banking system from the legacy IBM mainframe 
+by Q3 2026 with a budget of 50M THB"
 
-# Good (what you share with AI)
-const dbPassword = process.env.DB_PASSWORD;
+Anonymized: "A large Thai bank wants to migrate their core 
+system from a legacy mainframe by Q3 2026 with an 8-figure 
+budget. What are the key risks and recommended approach?"
 ```
 
-```
-# Bad
-User Alice Smith (alice@company.com, SSN: 123-45-6789) reported an error.
+You get the same quality of advice without exposing sensitive data.
 
-# Good
-A user reported an error when trying to update their profile.
-The error message is: [error message]
-```
+## Tool-Specific Privacy Settings
 
-### Use Company-Approved Tools
+### Claude (Anthropic)
+- Free/Pro: Conversations may be used for training. Opt out in Settings → Privacy
+- Team/Enterprise: Data not used for training. Covered by BAA (Business Associate Agreement)
+- Projects: Files stay within the project, not used for training
 
-Many organizations have approved AI tools with enterprise agreements that:
-- Do not train on your data
-- Provide data isolation
-- Offer audit logging
-- Comply with relevant regulations
+### ChatGPT (OpenAI)
+- Free/Plus: Conversations used for training by default. Opt out in Settings → Data Controls
+- Team/Enterprise: Data not used for training
 
-Use these instead of consumer-grade AI tools for work tasks.
+### Google Gemini
+- Free: Conversations may be reviewed by human annotators
+- Workspace (business): Governed by your organization's Google Workspace agreement
 
-### Check the Terms
+## AI Use Policy Template for Teams
 
-Before using any AI tool for work:
-1. Does it train on your inputs?
-2. Can you opt out?
-3. Where is data processed?
-4. How long is data retained?
-5. Is there an enterprise option with better privacy?
+If your team doesn't have an AI policy, start with these rules:
 
-### Use Local Models When Appropriate
+1. **No customer data in AI tools** — ever
+2. **No financial data in free AI tools** — paid tier with training opt-out only
+3. **Anonymize before sharing** — remove names, IDs, and specifics
+4. **Verify AI output before sharing externally** — AI can hallucinate facts and generate plausible but wrong information
+5. **Disclose AI usage** — if AI helped create a deliverable, note it in your work
 
-For highly sensitive code or data, consider running AI models locally. No data leaves your machine. Trade-off: local models are typically less capable than cloud-hosted ones.
+## Key Takeaway
 
-## Company Policies
-
-If your company has an AI usage policy, follow it. If it doesn't, advocate for one. A clear policy protects everyone.
-
-A good policy covers:
-- Which tools are approved
-- What data can and cannot be shared
-- Who to ask for guidance
-- What to do if you accidentally share sensitive data
-
-## Common Mistakes
-
-- Pasting error logs that contain real user data, stack traces with internal hostnames, or environment variables. Always sanitize.
-- Sharing code that includes hardcoded credentials "just for context." Remove them first.
-- Assuming free tools have the same privacy protections as paid enterprise plans. They usually don't.
-- Not checking whether your company has a policy. Ignorance of the policy is not a defense.
+AI is useful but your data is irreplaceable. When in doubt, anonymize. Use paid tiers for sensitive work. And always remember: AI output needs human review before it reaches clients or stakeholders.

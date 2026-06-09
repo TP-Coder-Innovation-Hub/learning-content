@@ -1,69 +1,58 @@
-# What is AI
+# What AI Actually Is — For People Who Use It
 
-## What
+## What You'll Learn
 
-AI is pattern recognition at scale. You feed it enormous amounts of data, it finds patterns, and it uses those patterns to generate predictions, text, images, or decisions.
+- What generative AI is and how it works (in plain language)
+- What AI can do, what it can't, and what it's bad at
+- The difference between AI chat, AI search, and AI agents
+- How to set realistic expectations before using any AI tool
 
-## What AI Can Do
+## What Is Generative AI
 
-- Recognize patterns in data (spam detection, image classification)
-- Generate content that follows patterns it has seen (text, code, images)
-- Make predictions based on historical data (recommendations, forecasting)
-- Automate repetitive tasks that follow predictable patterns (data entry, basic customer support)
-- Summarize, translate, and transform information
-- Assist with decision-making by surfacing relevant information
+Generative AI is software that produces text, images, code, or audio by predicting what comes next. It learned patterns from massive amounts of data. When you type a prompt, it generates a response based on those patterns.
 
-## What AI Cannot Do
+It does NOT:
+- Understand truth or verify facts
+- Access real-time information (unless connected to a tool)
+- Think or reason the way humans do
+- Remember your past conversations (unless you're in a project/session)
 
-- Understand. It processes patterns, not meaning. It does not know what words mean.
-- Reason. It predicts likely next tokens. It does not think through problems logically.
-- Be reliable without verification. It confidently generates wrong answers (hallucinations).
-- Replace domain expertise. It can assist an expert but cannot substitute for one.
-- Make judgment calls involving ethics, context, or nuance it hasn't been trained on.
+It DOES:
+- Generate fluent, convincing text on almost any topic
+- Follow structured instructions with high reliability
+- Draft, summarize, translate, and transform content quickly
+- Help you think through problems by reflecting ideas back at you
 
-## Setting Realistic Expectations
+## The 4D Framework (Anthropic AI Fluency)
 
-### Good Use Cases
+Every AI interaction involves four skills:
 
-- Drafting documents (human reviews and edits)
-- Code suggestions (developer verifies)
-- Data analysis and summarization
-- Translating between languages
-- Brainstorming and ideation
-- Automating routine, pattern-based tasks
+| Skill | What It Means |
+|-------|---------------|
+| **Delegation** | Deciding what to ask AI to do (and what NOT to) |
+| **Description** | Writing clear instructions so AI understands your intent |
+| **Discernment** | Evaluating AI's output — is it correct, useful, safe? |
+| **Diligence** | Using AI responsibly — privacy, ethics, long-term impact |
 
-### Bad Use Cases
+You'll practice all four throughout this course.
 
-- Making final decisions without human review
-- Generating factual claims without verification
-- Replacing customer interactions that require empathy
-- Handling tasks with high consequences for errors (medical, legal, financial) without expert oversight
-- Anything requiring accountability (AI cannot be held responsible)
+## Types of AI Tools (2026)
 
-## The Mental Model
+| Type | Examples | Best For |
+|------|----------|----------|
+| Chat AI | Claude, ChatGPT, Gemini | Writing, analysis, brainstorming, coding |
+| AI Search | Perplexity, Google AI Overview | Finding current information with sources |
+| AI Agents | Claude Cowork, Claude Code, OpenAI Operator | Multi-step tasks that take minutes, not seconds |
+| Image AI | Gemini Imagen, DALL-E, Midjourney | Creating images from text descriptions |
+| Voice AI | Google NotebookLM, ElevenLabs | Audio summaries, voice generation |
 
-Think of AI as a very fast, very well-read intern:
+## Before You Start
 
-- It has read an enormous amount of material
-- It can produce work quickly
-- It sometimes makes things up with complete confidence
-- It does not understand the material, it has memorized patterns
-- Its output needs review before it goes to anyone important
-- It gets better with clear instructions and feedback
+1. Pick ONE tool to start with — Claude, ChatGPT, or Gemini
+2. Use it daily for one week on real tasks
+3. Notice what works well and what doesn't
+4. Come back to this course to improve your approach
 
-## How to Think About AI Output
+## Key Takeaway
 
-Every piece of AI output falls into one of three categories:
-
-1. **Correct and useful** — Use it
-2. **Partially correct** — Edit it. This is the most common category.
-3. **Confidently wrong** — Discard it and do the work yourself
-
-The skill is quickly categorizing which bucket you are in. The faster you can evaluate AI output, the more productive the interaction.
-
-## Common Misconceptions
-
-- "AI will replace developers." It changes how developers work. It does not eliminate the need for people who understand systems, trade-offs, and business logic.
-- "AI is objective." Training data has biases. AI reflects and amplifies those biases.
-- "More data always helps." Garbage in, garbage out. Quality and relevance of data matter more than quantity.
-- "AI gets smarter over time on its own." Models do not learn continuously. They learn during training. (Some systems have memory, but the base model is fixed.)
+AI is a tool, not an oracle. It's fast, fluent, and helpful — but it makes mistakes. Your job is to delegate wisely, describe clearly, evaluate critically, and use responsibly.

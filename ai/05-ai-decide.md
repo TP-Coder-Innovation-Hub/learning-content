@@ -1,94 +1,107 @@
-# AI Decide
+# Workflow: Decide and Plan with AI as Your Advisor
 
-## What
+## What You'll Learn
 
-AI is useful for decision-making — not as the decision maker, but as a thinking partner. It can play devil's advocate, surface considerations you missed, and help you structure your analysis.
+- Using AI as a thinking partner for decisions
+- Structured frameworks for decision-making with AI
+- When to trust AI advice and when not to
+- Practical exercises for real workplace decisions
 
-## AI as Devil's Advocate
+## AI as Advisor, Not Decision-Maker
 
-Ask AI to argue against your position. This tests the strength of your thinking.
+AI should never make decisions for you. It should help you:
+- See blind spots you're missing
+- Structure complex trade-offs
+- Generate options you haven't considered
+- Play devil's advocate
 
+The decision is always yours. AI is the whiteboard, not the boss.
+
+## Exercise 1: Pros and Cons Analysis
+
+Prompt:
 ```
-I'm deciding to use PostgreSQL for our new microservice. 
-Here's my reasoning: [your reasoning].
+I'm deciding whether to [decision]. 
 
-Argue against this decision. What am I missing? What could go wrong? 
-What would make this a bad choice?
-```
+Context: [brief background]
+Constraints: [budget, timeline, team size, etc.]
+My current leaning: [what you're biased toward]
 
-The AI will surface concerns you haven't considered. Some will be valid. Some won't. The value is in forcing yourself to defend your position.
+Help me think through this:
+1. List 5 pros and 5 cons
+2. Identify what I might be missing
+3. Challenge my current leaning — argue the opposite
+4. Suggest what information would make this decision easier
 
-## AI as Brainstorming Partner
-
-Generate options you haven't thought of.
-
-```
-We need to reduce our API response time from 800ms to under 200ms. 
-Current stack: Node.js, PostgreSQL, Redis cache.
-
-Brainstorm 10 different approaches. Include unconventional options.
-For each, note: expected impact, implementation effort, risks.
-```
-
-You get a breadth of ideas fast. Then you evaluate them with your domain knowledge.
-
-## Decision Frameworks with AI
-
-### Pros/Cons Analysis
-
-```
-Compare using Kafka vs RabbitMQ for our order processing pipeline.
-
-Format as a table with columns:
-- Criterion
-- Kafka
-- RabbitMQ
-- Winner
-
-Criteria: throughput, latency, ordering guarantees, operational complexity,
-ecosystem maturity, cost at our scale (10K messages/sec)
+Write in Thai.
 ```
 
-### Scenario Planning
+## Exercise 2: Scenario Planning
 
+Prompt:
 ```
-I'm choosing between hiring a senior engineer vs promoting a junior engineer 
-to tech lead. Describe what happens in 6 months under each scenario if:
-1. Things go well
-2. Things go poorly
-3. The person leaves
+I need to plan for [situation]. Help me create 3 scenarios:
+
+Scenario A: Best case — what happens if everything goes right?
+Scenario B: Most likely — what's the realistic outcome?
+Scenario C: Worst case — what if everything goes wrong?
+
+For each scenario:
+- What it looks like
+- Probability (your estimate)
+- What I should prepare
+
+Context: [paste your situation]
 ```
 
-### Reversibility Check
+## Exercise 3: Prioritization Matrix
 
+Prompt:
 ```
-I'm considering migrating from REST to gRPC for internal services.
-Is this decision easily reversible? What would a rollback look like?
-What are the one-way doors?
+I have these tasks/initiatives to choose from:
+[List your items]
+
+Help me prioritize using a 2x2 matrix:
+- High impact, Low effort (do first)
+- High impact, High effort (plan carefully)
+- Low impact, Low effort (do when free)
+- Low impact, High effort (skip)
+
+For each item, estimate impact and effort.
+Then recommend a priority order.
 ```
 
-## What AI is Good For
+## Exercise 4: Meeting Preparation
 
-- **Generating alternatives** — You think of 3 options. AI gives you 7.
-- **Challenging assumptions** — "What if the opposite is true?"
-- **Structuring analysis** — Frameworks, comparison tables, scoring matrices
-- **Stress-testing plans** — "What could go wrong with this approach?"
+Before an important meeting, use AI to prepare:
 
-## What AI is Bad For
+Prompt:
+```
+I have a meeting tomorrow about [topic]. 
 
-- **Making the final call** — AI doesn't know your team, your culture, your constraints
-- **Intuition and judgment** — These come from experience, not pattern matching
-- **Understanding context** — The real reasons behind a decision are often unwritten
-- **Accountability** — AI cannot take responsibility for a bad decision
+Attendees: [list roles]
+My goal: [what I want from the meeting]
+Potential objections: [what people might push back on]
 
-## The Rule
+Help me prepare:
+1. A 30-second opening statement
+2. 3 key points to make
+3. Anticipated objections and how to respond
+4. A closing ask
 
-AI informs decisions. People make them. Use AI to widen your perspective, not to narrow your accountability.
+Write in Thai. Professional but conversational tone.
+```
 
-If you find yourself saying "the AI said we should," you're using it wrong. The right framing is: "After considering multiple perspectives, including AI-generated analysis, I recommend..."
+## Delegation: What to Ask AI vs What to Decide Yourself
 
-## Common Mistakes
+| Ask AI | Decide Yourself |
+|--------|----------------|
+| "What are the risks I'm missing?" | Final go/no-go decision |
+| "Help me compare these options" | Which values to prioritize |
+| "Draft a plan for X" | Whether the plan feels right |
+| "What would someone who disagrees say?" | Which stakeholder to trust |
+| "Summarize the trade-offs" | Which trade-off to accept |
 
-- Asking AI to make the decision for you. "Should we use React or Vue?" leads to a generic non-answer. "Help me think through React vs Vue for our specific case" is productive.
-- Accepting AI's analysis without adding your own expertise. AI doesn't know your team's skills, your timeline, or your business constraints.
-- Only using AI to confirm what you already believe. If you only ask for supporting arguments, you're seeking validation, not insight.
+## Key Takeaway
+
+AI makes your thinking better by surfacing what you can't see alone. Use it to structure decisions, challenge assumptions, and explore alternatives. But the final call is always human — that's where experience, values, and context matter most.
