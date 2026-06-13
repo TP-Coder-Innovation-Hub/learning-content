@@ -15,6 +15,8 @@ Claude Cowork: you describe an outcome, Claude works on it for minutes — readi
 
 Think of it as the difference between asking a colleague a question vs assigning them a task.
 
+> **Diagram:** Cowork workflow — you describe a task, Claude plans steps, reads files, creates output, then you review the result.
+
 ```mermaid
 graph LR
     A["You: describe task"] --> B["Cowork: plans steps"]
