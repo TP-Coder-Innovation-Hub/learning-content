@@ -11,6 +11,8 @@
 
 NotebookLM is a free Google tool that becomes an AI expert on **your** documents. You upload PDFs, Google Docs, websites, YouTube videos — it reads everything and answers questions grounded in YOUR sources.
 
+> **Diagram:** NotebookLM flow — upload PDFs/Docs/URLs/YouTube, NotebookLM reads everything, you ask questions, it answers with citations to your sources.
+
 ```mermaid
 graph LR
     A["Upload: PDFs, Docs, URLs, YouTube"] --> B["NotebookLM reads everything"]
