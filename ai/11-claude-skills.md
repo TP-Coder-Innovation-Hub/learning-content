@@ -11,6 +11,8 @@
 
 Skills are reusable instruction files that make AI follow your workflow every time. Instead of explaining the same thing in every conversation, you write it once as a Skill. AI loads it automatically when relevant.
 
+> **Diagram:** Skill matching flow — you write a report, the system checks if a Skill matches, if yes it loads SKILL.md and AI follows your workflow, otherwise normal AI response.
+
 ```mermaid
 graph LR
     A["You: write report"] --> B{"Skill matches?"}
