@@ -38,4 +38,4 @@ Each file follows this pattern:
 - `devops/` — CI/CD, Kubernetes, monitoring
 - `ai/` — AI fundamentals and practical usage
 - `nontech/` — Non-technical explanations for business audiences
-- `capstones/` — Project-based learning (linked from individual repos)
+- `workshops/` — Project-based learning (linked from individual repos)
