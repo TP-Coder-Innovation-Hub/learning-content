@@ -72,5 +72,5 @@ Shared educational content for common backend topics. Language-agnostic concepts
 - [Working with Tech Teams](nontech/07-working-with-tech-teams.md) — Communication and requirements
 - [Tech Decisions](nontech/08-tech-decisions.md) — Build vs buy, trade-offs
 
-### Capstones
+### Workshops
 - [Capstone Projects](capstones/README.md) — TODO
