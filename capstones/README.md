@@ -1,3 +1,3 @@
 # Workshop Projects
 
-TODO: Capstone projects will be linked from individual repos.
+TODO: Workshop projects will be linked from individual repos.
