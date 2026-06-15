@@ -119,3 +119,7 @@ Focus on features and use cases only.
 ## Key Takeaway
 
 Good prompting is good communication. If a human colleague wouldn't understand your request, AI won't either. Be specific, provide context, and iterate.
+
+## Further Reading
+
+- [Prompt Design Strategies — Google Gemini Guide](https://ai.google.dev/gemini-api/docs/prompting-strategies) — Official Google guide covering input types, few-shot consistency, breaking down complex prompts, and model parameters. More technical/API-focused but useful for deeper understanding.
