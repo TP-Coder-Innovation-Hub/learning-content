@@ -3,9 +3,9 @@
 ## What You'll Learn
 
 - The 4 elements of every good prompt: Role, Context, Task, Format
+- Prompting patterns: zero-shot, few-shot, chain of thought, constraints
+- How to break down complex tasks into chained prompts
 - How to iterate when the output isn't right
-- Common mistakes that produce bad results
-- The Description skill from the 4D Framework
 
 ## The RCTF Prompt Framework
 
@@ -93,28 +93,84 @@ focusing on the financial impact and next steps"
 
 ## Prompting Patterns That Work
 
-**Chain of thought:** Ask AI to think step by step before giving the answer.
+These patterns come from AI research but are practical for anyone. Use them when a simple prompt isn't enough.
+
+### Zero-shot — Ask Directly
+
+No examples, just instructions. Works for simple, common tasks where AI already knows the pattern.
+
 ```
-Think step by step. First identify the core problem, 
-then list possible solutions, then recommend the best one 
-with reasoning.
+Classify this email as "urgent" or "normal":
+[paste email]
 ```
 
-**Few-shot examples:** Show AI what you want with examples.
-```
-Here are examples of good email subject lines:
-- "Q3 Report: Action Required by Friday"
-- "Update: Project Phoenix Timeline Change"
+If the result is wrong or inconsistent, switch to few-shot.
 
-Now write a subject line for: [your situation]
+### Few-shot — Show, Don't Tell
+
+Give 2-3 examples so AI learns the exact pattern you want. This is the single most effective way to improve output quality.
+
+```
+Classify these emails:
+
+Email: "Server down, all users affected"
+Label: Urgent
+
+Email: "Weekly newsletter subscription"
+Label: Normal
+
+Email: "Payment failed for order #1234"
+Label: Urgent
+
+Email: [paste your email]
+Label:
 ```
 
-**Constraint-based:** Tell AI what NOT to do.
+**Rules for good examples:**
+- Keep the same format across all examples
+- Use 2-3 examples (too many can confuse the model)
+- Make examples different enough to show the pattern, not just copies
+
+### Chain of Thought — Think Step by Step
+
+Ask AI to reason before answering. Dramatically improves accuracy for complex questions, math, planning, and analysis.
+
 ```
-Write a product description. Do NOT use superlatives 
-(best, amazing, incredible). Do NOT mention pricing.
-Focus on features and use cases only.
+Think step by step.
+
+1. First, identify the root cause of the problem
+2. Then, list 3 possible solutions
+3. Then, compare pros and cons of each
+4. Finally, recommend the best one with reasoning
+
+Problem: [your problem]
 ```
+
+You can also just add "Think step by step before answering" to any prompt.
+
+### Constraints — Tell AI What NOT to Do
+
+Sometimes telling AI what to avoid is more effective than telling it what to do.
+
+```
+Write a product description.
+- Do NOT use superlatives (best, amazing, incredible)
+- Do NOT mention pricing
+- Do NOT exceed 100 words
+- Focus on features and use cases only
+```
+
+### Break Down Complex Tasks
+
+Don't ask AI to do everything in one prompt. Chain prompts for multi-step work:
+
+```
+Step 1 prompt: "Analyze this report and list the 3 key findings"
+Step 2 prompt (paste findings): "For each finding, suggest one action item"
+Step 3 prompt (paste action items): "Write a summary email to the team"
+```
+
+Each step gives AI focused context, producing better results than one giant prompt.
 
 ## Key Takeaway
 
@@ -122,4 +178,4 @@ Good prompting is good communication. If a human colleague wouldn't understand y
 
 ## Further Reading
 
-- [Prompt Design Strategies — Google Gemini Guide](https://ai.google.dev/gemini-api/docs/prompting-strategies) — Official Google guide covering input types, few-shot consistency, breaking down complex prompts, and model parameters. More technical/API-focused but useful for deeper understanding.
+- [Prompt Design Strategies — Google Gemini Guide](https://ai.google.dev/gemini-api/docs/prompting-strategies) — Official Google guide with more advanced patterns: response format control, partial input completion, model parameters (temperature, topK), and agentic workflows.
