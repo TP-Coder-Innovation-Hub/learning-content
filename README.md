@@ -42,6 +42,7 @@ Shared educational content for common backend topics. Language-agnostic concepts
 - [Saga Pattern](distributed-systems/03-saga-pattern.md) — Distributed transactions, choreography vs orchestration
 - [Failure Modes](distributed-systems/04-failure-modes.md) — Cascading failures, bulkhead, chaos engineering
 - [Workflow Orchestration](distributed-systems/05-workflow-orchestration.md) — Temporal, durable execution
+- [Message Reliability](distributed-systems/06-message-reliability.md) — Outbox pattern, idempotent consumers, DLQ, ordering
 
 ### Cloud
 - [Compute Models](cloud/01-compute-models.md) — VM vs container vs serverless
