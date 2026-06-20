@@ -13,10 +13,14 @@ A background job is work that happens outside the request-response cycle. Instea
 
 ## The Worker Pattern
 
-```text
-Request → Handler → Queue → Worker → External System
-                        ↓
-                    Response (immediate)
+```mermaid
+flowchart LR
+    C[Client Request] --> H[API Handler]
+    H --> Q[Job Queue]
+    H --> R["202 Accepted<br/>(immediate)"]
+    Q --> W[Worker]
+    W --> E[External System<br/>Email / PDF / API]
+    W --> Q2[Mark Job Done]
 ```
 
 1. The API handler creates a job and pushes it to a queue
