@@ -44,6 +44,22 @@ Response (if not allowed):
 
 For requests that might modify data (POST, PUT, DELETE) or use custom headers, the browser sends a "preflight" OPTIONS request first:
 
+```mermaid
+sequenceDiagram
+    participant B as Browser (app.example.com)
+    participant S as API Server (api.example.com)
+
+    Note over B,S: Step 1: Preflight check
+    B->>S: OPTIONS /api/users<br/>Origin: app.example.com<br/>Access-Control-Request-Method: POST
+    S-->>B: Allow-Origin: app.example.com<br/>Allow-Methods: GET, POST, PUT, DELETE<br/>Max-Age: 3600
+
+    Note over B: Preflight passed. Send real request.
+
+    Note over B,S: Step 2: Actual request
+    B->>S: POST /api/users<br/>Origin: app.example.com<br/>Body: {name: "Alice"}
+    S-->>B: 201 Created + Allow-Origin header
+```
+
 ```text
 Preflight:
   OPTIONS /api/users
