@@ -97,8 +97,18 @@ The `processed_messages` table is your deduplication key. Use the broker-assigne
 
 When a message fails repeatedly (poison message), stop retrying and move it to a dead letter queue for investigation.
 
-```text
-Queue → Consumer (fails) → Retry (fails) → Retry (fails) → DLQ
+```mermaid
+flowchart LR
+    Q[Message Queue] --> C[Consumer]
+    C -->|process| OK{Success?}
+    OK -->|yes| D[Done]
+    OK -->|no| R1[Retry 1]
+    R1 --> C
+    R1 -->|fail| R2[Retry 2]
+    R2 --> C
+    R2 -->|fail| R3[Retry 3]
+    R3 --> C
+    R3 -->|fail| DLQ[(Dead Letter<br/>Queue)]
 ```
 
 DLQ rules:
