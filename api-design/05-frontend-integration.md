@@ -44,14 +44,23 @@ For immediate revocation (banned user, security breach), use a token blacklist c
 
 A BFF is a thin backend layer between the frontend and your core APIs. It's tailored to one specific frontend (web, mobile, admin).
 
-```text
-Without BFF:
-  React App → /api/users, /api/orders, /api/preferences, /api/notifications
-  (4 separate calls, different response shapes, frontend must aggregate)
+```mermaid
+flowchart TB
+    subgraph Without BFF
+        direction LR
+        R1[React App] --> U1[/api/users/]
+        R1 --> O1[/api/orders/]
+        R1 --> P1[/api/preferences/]
+        R1 --> N1[/api/notifications/]
+    end
 
-With BFF:
-  React App → /bff/dashboard (1 call, aggregated response)
-  BFF internally calls: /api/users + /api/orders + /api/preferences
+    subgraph With BFF
+        direction LR
+        R2[React App] --> BFF["/bff/dashboard<br/>(aggregated)"]
+        BFF --> U2[/api/users/]
+        BFF --> O2[/api/orders/]
+        BFF --> P2[/api/preferences/]
+    end
 ```
 
 Benefits:
