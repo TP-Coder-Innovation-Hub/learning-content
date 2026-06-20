@@ -39,6 +39,14 @@ If the database commit succeeds but the publish fails, the order is confirmed bu
 
 Write the message to an "outbox" table in the **same database transaction** as the business operation. Then a separate process reads the outbox and publishes to the broker.
 
+```mermaid
+flowchart LR
+    S[Service] -->|"1. DB Transaction<br/>(business data + outbox)"| DB[(Database)]
+    DB -->|outbox table| R[Outbox Relay]
+    R -->|"2. Publish events"| B[Message Broker]
+    B -->|deliver| C[Consumer]
+```
+
 ```sql
 -- Single transaction
 BEGIN;
