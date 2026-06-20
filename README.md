@@ -16,6 +16,7 @@ Shared educational content for common backend topics. Language-agnostic concepts
 - [OAuth Basics](auth-security/02-oauth-basics.md) — OAuth 2.0 roles and flows
 - [Input Validation](auth-security/03-input-validation.md) — SQL injection, XSS, CSRF, OWASP
 - [Security Best Practices](auth-security/04-security-best-practices.md) — HTTPS, secrets, rate limiting, logging
+- [CORS and Security Headers](auth-security/05-cors-and-headers.md) — Same-origin policy, preflight, CSP, HSTS, X-Frame-Options
 
 ### Production Readiness
 - [Logging](production-readiness/01-logging.md) — Structured logging, log levels, centralized logging
