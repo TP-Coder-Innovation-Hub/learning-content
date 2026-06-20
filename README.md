@@ -9,6 +9,7 @@ Shared educational content for common backend topics. Language-agnostic concepts
 - [Versioning](api-design/02-versioning.md) — URL, header, and query param versioning trade-offs
 - [Pagination](api-design/03-pagination.md) — Offset vs cursor pagination
 - [Error Responses](api-design/04-error-responses.md) — Consistent error format, RFC 7807
+- [Frontend Integration](api-design/05-frontend-integration.md) — SPA auth flow, BFF pattern, API client generation, real-time
 
 ### Auth & Security
 - [Auth Concepts](auth-security/01-auth-concepts.md) — Authentication vs authorization, sessions, JWT
