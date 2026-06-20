@@ -14,6 +14,27 @@ Caching stores frequently accessed data in fast storage so you don't have to fet
 
 The most common pattern. The application checks the cache first. On a miss, it loads from the source and fills the cache.
 
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant A as Application
+    participant Cache as Cache
+    participant DB as Database
+
+    C->>A: get_user(42)
+    A->>Cache: GET user:42
+    alt Cache hit
+        Cache-->>A: {name: "Alice", ...}
+        A-->>C: user data
+    else Cache miss
+        Cache-->>A: null
+        A->>DB: SELECT * FROM users WHERE id = 42
+        DB-->>A: {name: "Alice", ...}
+        A->>Cache: SET user:42 (TTL: 300s)
+        A-->>C: user data
+    end
+```
+
 ```python
 def get_user(user_id):
     # 1. Check cache
