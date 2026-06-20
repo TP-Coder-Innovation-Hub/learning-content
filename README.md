@@ -24,6 +24,8 @@ Shared educational content for common backend topics. Language-agnostic concepts
 - [Configuration](production-readiness/03-configuration.md) — 12-factor app config, env vars, feature flags
 - [Health Checks](production-readiness/04-health-checks.md) — Liveness vs readiness, graceful shutdown
 - [Rate Limiting](production-readiness/05-rate-limiting.md) — Token bucket, sliding window, implementation
+- [Caching](production-readiness/06-caching.md) — Cache-aside, write-through, TTL, invalidation, stampede
+- [Background Jobs](production-readiness/07-background-jobs.md) — Worker pattern, scheduling, retry, idempotency
 
 ### Observability
 - [Three Pillars](observability/01-three-pillars.md) — Metrics, logs, traces
