@@ -22,12 +22,22 @@ Where should the frontend store the JWT after login?
 
 Access tokens expire quickly (15 minutes). Refresh tokens live longer (7 days). The frontend uses the refresh token to get new access tokens without asking the user to log in again.
 
-```text
-1. Login → Server returns access_token (15min) + refresh_token (7d)
-2. Use access_token for API calls
-3. access_token expires → Frontend calls POST /auth/refresh with refresh_token
-4. Server returns new access_token (+ optionally new refresh_token)
-5. Repeat
+```mermaid
+sequenceDiagram
+    participant FE as Frontend
+    participant API as API Server
+
+    Note over FE,API: Initial login
+    FE->>API: POST /auth/login (email, password)
+    API-->>FE: access_token (15min) + refresh_token (7d)
+
+    Note over FE: Use access_token for API calls...
+
+    Note over FE,API: access_token expired
+    FE->>API: POST /auth/refresh (refresh_token)
+    Note over API: Validate + rotate refresh token
+    API-->>FE: new access_token + new refresh_token
+    Note over API: Old refresh_token invalidated
 ```
 
 **Rotation rule:** Issue a new refresh token on every refresh. If a stolen token is used, the legitimate user's next refresh fails (token replay detection).
